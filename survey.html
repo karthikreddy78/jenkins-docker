@@ -1,0 +1,182 @@
+<!--Assignment1 By Karthik Reddy Musku - G01446785 -->
+<!-- Using Bootstrap I have created a form following all the requirements -->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <title>Survey</title>
+</head>
+
+<body>
+  <div class="container-fluid bg-secondary ">
+    <div class="row">
+      <div class="col-2"></div>
+      <div class="col-8">
+        <div class="card">
+          <div class="card-body">
+            <h1 style="font-family: Georgia, 'Times New Roman', Times, serif;" class="text-center">Survey</h1>
+            <form class="container-fluid" method="post" autocomplete="on">
+              <div class="form-group">
+                <label for="firstname">First Name<small style="display:inline; color:red;">*</small></label>
+                <input type="firstname" class="form-control" id="firstname" placeholder="Enter your first name" required autofocus>
+              </div>
+              <div class="form-group">
+                <label for="lastname">Last Name<small style="display:inline; color:red;">*</small></label>
+                <input type="text" class="form-control" id="lastname" placeholder="Enter your last name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email address<small style="display:inline; color:red;">*</small></label>
+                <input type="text" class="form-control" id="email" placeholder="Enter email" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Telephone Number<small style="display:inline; color:red;">*</small></label>
+                <input type="text" class="form-control" id="phone" placeholder="(###) ###-####" required>
+              </div>
+    
+              <div class="form-group">
+                <label for="address">Street Address<small style="display:inline; color:red;">*</small></label>
+                <input type="text" class="form-control" id="address" placeholder="Enter your address" required>
+              </div>
+              <div class="form-row">
+                <div class="col-6">
+                  <label for="city">City<small style="display:inline; color:red;">*</small></label>
+                </div>
+                <div class="col">
+                  <label for="State">State<small style="display:inline; color:red;">*</small></label>
+                </div>
+                <div class="col">
+                  <label for="Zip">Zip<small style="display:inline; color:red;">*</small></label>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-6">
+                    <input type="text" class="form-control" id="city" placeholder="Enter City" required>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="state" placeholder="Enter State" required>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" id="zip" placeholder="Enter Zip" required>
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="date">Date of Survey<small style="display:inline; color:red;">*</small></label>
+                <input type="text" class="form-control" id="date" placeholder="mm/dd/yyyy" required>
+              </div>
+
+              <div class="form-group">
+                <label for="raffle">Raffle <small style="display:inline; color:red;">(Note: This information will be used to announce whether the student 
+                  wins a free movie ticket.) </small></label>
+                <input type="text" class="form-control" id="raffle" placeholder="Please enter 10 comma separated integers from 1- 100.">
+              </div>
+              
+    
+              <!-- Part-2 -->
+              <div class="form-group">
+                What do you like most about the campus?
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="students" id="students">
+                  <label class="form-check-label" for="students">Students</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="location" id="location">
+                  <label class="form-check-label" for="location">Location</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="campus" id="campus">
+                  <label class="form-check-label" for="campus"> Campus</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="atmosphere" id="atmosphere">
+                  <label class="form-check-label" for="atmosphere">Atmosphere</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="dorm" id="dorm">
+                  <label class="form-check-label" for="dorm">Dorm rooms</label>
+                </div>
+                <div class="form-check">
+                  <input type="checkbox" class="form-check-input" name="sports" id="sports">
+                  <label class="form-check-label" for="sports">Sports</label>
+                </div>
+              </div>
+    
+              <div class="form-group">
+                What caused the interest to join in the university?
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="interests"> Friends
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="interests">Television
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="interests">Internet
+                  </label>
+                </div>
+                <div class="form-check">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="interests">Other
+                  </label>
+                </div>
+              </div>
+    
+              <div class="form-group">
+                <label for="likelihood">How likely are you going to suggest the university</label>
+                <select class="form-control" id="likelihood">
+                  <option>Very Likely</option>
+                  <option>Likely</option>
+                  <option>Unlikely</option>
+                </select>
+              </div>
+    
+              <div class="form-group">
+                <label for="comment">Additional Comments:</label>
+                <textarea class="form-control" rows="5" id="comment"></textarea>
+              </div>
+    
+              <div class="row">
+                <div class="col-6"><button type="submit" class="btn btn-success btn-block">Submit</button></div>
+                <div class="col-6"><button class="btn btn-danger btn-block">Cancel</button></div>
+              </div>
+              
+            </form>
+          </div>
+        </div>
+        
+
+      </div>
+      <div class="col-2"></div>
+    </div>
+  </div>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
